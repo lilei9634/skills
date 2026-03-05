@@ -1,0 +1,4 @@
+interface:
+  display_name: "Amazon Ads Report Audit"
+  short_description: "Audit report bundles with strict daily data checks"
+  default_prompt: "Use $amazon-ads-report-audit to validate this shop report folder and list missing, non-daily, and empty files."
