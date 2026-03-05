@@ -1,9 +1,22 @@
 ---
 name: amazon-ads-report-audit
-description: Validate Amazon Ads and business report bundles for one or multiple shops using a fixed checklist. Use when a user asks to check whether downloaded reports are complete, whether time-granularity is daily, whether files are empty, and what is missing before analysis.
+description: Validate Amazon Ads and business report bundles for one or multiple shops using a fixed checklist. Use when a user asks to check whether downloaded reports are complete, whether time-granularity is daily, whether files are empty, and what is missing before analysis. 支持中英文双语输出与按用户语言自动切换。
 ---
 
 # Amazon Ads Report Audit
+
+## Language Mode / 语言模式
+Use these output rules:
+- If the user writes in Chinese, respond in Chinese.
+- If the user writes in English, respond in English.
+- If the user explicitly requests bilingual output, provide both Chinese and English in parallel sections.
+- Keep all file names and report keys as literal strings.
+
+使用以下输出规则：
+- 用户使用中文提问时，用中文输出。
+- 用户使用英文提问时，用英文输出。
+- 用户明确要求双语时，输出中英文并列版本。
+- 文件名和报表关键字保持原样，不翻译文件名。
 
 ## Overview
 Use this skill to audit a shop folder and return a strict readiness verdict for ad analysis.
@@ -13,6 +26,15 @@ Audit goals:
 - Enforce daily-granularity for date-based reports.
 - Flag empty files and non-blocking caveats.
 - Return missing/non-compliant files in a fixed, concise format.
+
+概述：
+使用该技能审核店铺报表目录，并给出分析可用性的明确结论。
+
+审核目标：
+- 检查必需报表是否齐全。
+- 强制检查时间粒度是否为日级。
+- 标记空表与非阻塞风险项。
+- 按固定格式输出缺失项与不合规项。
 
 ## Inputs
 Require these inputs from the user:
