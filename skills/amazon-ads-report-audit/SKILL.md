@@ -35,6 +35,19 @@ Require these inputs from the user:
 
 If the user does not provide a time window, assume `30 days`.
 
+## 使用范例
+示例 1（单店检查）：
+- `用 $amazon-ads-report-audit 检查 /Users/lilei/Desktop/Super Browser/猫头鹰 - 8/广告数据，按30天标准，US口径。`
+
+示例 2（多店批量检查）：
+- `用 $amazon-ads-report-audit 检查以下目录：/path/shop1/广告数据、/path/shop2/广告数据、/path/shop3/广告数据；按30天标准输出每店结论和总表。`
+
+示例 3（只看日级合规）：
+- `用 $amazon-ads-report-audit 检查 /path/shop/广告数据，只输出不合规的区间口径文件和重拉清单。`
+
+示例 4（检查后给动作）：
+- `用 $amazon-ads-report-audit 检查 /path/shop/广告数据，并按缺失项给出最小重拉列表（优先级从高到低）。`
+
 ## Required Reports (v2)
 Check these report name patterns (substring match is acceptable):
 
